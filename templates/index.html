@@ -1,81 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title> Portfolio </title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="https://faizannazir.github.io/Coursera-Test/templates/main.ico">
-    <link rel="stylesheet" href="../static/css/index.css">
-</head>
-
-<body>
-    <header clas>
-        <nav>
-            <a href="https://www.facebook.com/FAIZAN289" target="_blank" class="fa fa-facebook" type="button"></a>
-        </nav>
-        <div class="Buttons">
-            <button>
-                <a href="#">Home</a>
-            </button>
-            <button>
-                <a href="#about">About</a>
-            </button>
-            <button>
-                <a href="#">Portfolio</a>
-            </button>
-            <button>
-                <a href="/templates/contact.html">Contact</a>
-            </button>
-            <button>
-                <a href="../static/files/Resume-faizan-nazir.pdf" download>Download CV</a>
-            </button>
-
-        </div>
-
-    </header>
-    <img src="../static/images/main.jpg" alt="Profile">
-    <h1> <a href="#">@FAIZANNAZIR</a></h1>
-    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officiis quod asperiores cupiditate,
-        distinctio
-        nostrum doloribus pariatur omnis tempora! Eos nulla repellat quibusdam fugit officiis, sit sint natus
-        consequuntur iure esse culpa architecto quisquam ut sapiente, sequi sed minus laboriosam. Consectetur
-        officia sed culpa recusandae tenetur earum perspiciatis voluptatem debitis fuga quisquam tempora delectus
-        porro quas consequatur tempore quaerat, nostrum eaque saepe et dignissimos? Cum adipisci aut eos. Ipsa non,
-        dolorem in ducimus fugit consequatur! In ea nemo sit accusamus illum minima, earum voluptatum deserunt
-        aperiam, et consectetur harum exercitationem placeat perferendis fugiat nesciunt dicta dolor possimus
-        tempore voluptate! Ipsum?</p>
-
-    <table>
-        <thead>
-            <tr>
-                <th>
-                    #
-                </th>
-                <th>
-                    Language
-                </th>
-                <th>
-                    Percentage
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td> 01 </td>
-                <td>C++</td>
-                <td>90%</td>
-            </tr>
-            <tr>
-                <td>02</td>
-                <td> Python</td>
-                <td>90%</td>
-            </tr>
-
-        </tbody>
-    </table>
-
-</body>
-
-</html>
+{% extends "template.html" %}
+{% block main %}
+<img src="../static/images/main.jpg" alt="Profile">
+<h1 id="name"> <a href="#">@FAIZANNAZIR</a></h1>
+<p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officiis quod asperiores cupiditate,
+    distinctio
+    nostrum doloribus pariatur omnis tempora! Eos nulla repellat quibusdam fugit officiis, sit sint natus
+    consequuntur iure esse culpa architecto quisquam ut sapiente, sequi sed minus laboriosam. Consectetur
+    officia sed culpa recusandae tenetur earum perspiciatis voluptatem debitis fuga quisquam tempora delectus
+    porro quas consequatur tempore quaerat, nostrum eaque saepe et dignissimos? Cum adipisci aut eos. Ipsa non,
+    dolorem in ducimus fugit consequatur! In ea nemo sit accusamus illum minima, earum voluptatum deserunt
+    aperiam, et consectetur harum exercitationem placeat perferendis fugiat nesciunt dicta dolor possimus
+    tempore voluptate! Ipsum?</p>
+      
+{% endblock %}

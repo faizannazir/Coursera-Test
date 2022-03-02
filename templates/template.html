@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Portfolio </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename ='css/index.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header clas>
+        <nav>
+            <a href="https://www.facebook.com/FAIZAN289" target="_blank" class="fa fa-facebook" type="button"></a>
+        </nav>
+        <div class="Buttons">
+            <button>
+                <a href="{{ url_for('home') }}">Home</a>
+            </button>
+            <button>
+                <a href="#about">About</a>
+            </button>
+            <button>
+                <a href="#">Portfolio</a>
+            </button>
+            <button>
+                <a href="{{ url_for('contact') }}">Contact</a>
+            </button>
+            <button>
+                <a href="{{ url_for('static', filename ='files/Resume-faizan-nazir.pdf') }}" download>Download CV</a>
+            </button>
+
+        </div>
+
+    </header>
+    {% block main %}
+
+
+    {% endblock %}
+
+</body>
+
+</html>

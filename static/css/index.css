@@ -1,4 +1,6 @@
 body {
+  margin:0;
+  padding:0;
   background-color: #e5eaf0;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
@@ -14,49 +16,46 @@ img {
   margin-top: 6%;
   margin-left: 10%;
   margin-right: 5%;
-  image-rendering: optimizeQuality;
 }
 header{
 background-color: #DFB887;
-height: 40px;
+height: 50px;
 width: 100%;
 opacity: .9;
-margin: -8px -8px;
 margin-bottom: 10px;
 }
 .fa-facebook {
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
+  border-radius: 11.5px;
   background-color: #0909a0;
   color: white;
-  width: 20px;
-  margin: 0 auto;
+  width: 23px;
   margin-top: .5%;
   margin-right: 15%;
-  float:right
+  padding: 0.5%;
+  float:right;
 }
 button{
-  display: inline;
-  color: #444;
-  background-color: teal;
-  margin-top: .6%;
-  margin-left: 2%;
+  display: inline; 
+  width: 10%;
+  background-color: rgb(28, 28, 28);
+  color: rgb(74, 237, 255);
+  padding: 0.5%;
   text-decoration: none;
-  text-decoration-line: unset;
+  float:left;
 }
 button + button{
-  margin-left: 2%;
+  margin-left: 5%;
+  margin-top: 0.5%;
 }
-
-h1 {
-  border: turquoise;
-  border-style: dashed;
-  color: blue;
-  background-color: chartreuse;
-  width: 250px;
-  margin-left: 2%;
-  text-decoration: none;
+button:nth-child(1){
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+}
+button:hover, button:active{
+  background-color: red;
+  color: black;
 }
 
 
@@ -71,19 +70,6 @@ p.about {
   background: linear-gradient(90deg, #20007e 0%, #e61eb6 100%);
   font-weight: 12;
   color: white;
-}
-
-table,
-th,
-td {
-  border: 1px solid #039aff;
-  border-collapse: collapse;
-  text-align: center;
-}
-
-table {
-  margin: 2%;
-  width: 20%;
 }
 
 /*# sourceMappingURL=index.css.map */
